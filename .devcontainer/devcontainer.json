@@ -1,6 +1,6 @@
 {
   "name": "gevity",
-  "image": "turiz/gevity-lsp",
+  "image": "sphinxlightning/gevity-lsp",
   "customizations": {
     "vscode": {
       "settings": {
