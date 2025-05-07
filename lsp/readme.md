@@ -15,3 +15,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t gevity-lsp -f lsp/Dock
 in top level dir of this repo:
 
 docker run --rm -it --entrypoint "/bin/bash" -v .:/root/gevity gevity-lsp
+
+cd /root/gevity
+
+cargo test ruby_test
