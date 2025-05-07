@@ -10,6 +10,8 @@ docker run --rm -it --entrypoint "/bin/bash" sphinxlightning/gevity-lsp
 
 ### run ast tests
 
+docker buildx build --platform linux/amd64,linux/arm64 -t gevity-lsp -f lsp/Dockerfile .
+
 in top level dir of this repo:
 
 docker run --rm -it --entrypoint "/bin/bash" -v .:/root/gevity gevity-lsp
