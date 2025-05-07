@@ -18,4 +18,4 @@ docker run --rm -it --entrypoint "/bin/bash" -v .:/root/gevity gevity-lsp
 
 cd /root/gevity
 
-cargo test ruby_test
+cargo test test_ruby
