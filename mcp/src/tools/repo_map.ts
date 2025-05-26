@@ -14,7 +14,7 @@ export const RepoMapSchema = z.object({
 });
 
 export const RepoMapTool: Tool = {
-  name: "repo_map",
+  name: "gevity_repo_map",
   description:
     "Generate a visual map/tree of the directories and files in the repo",
   inputSchema: parseSchema(RepoMapSchema),
