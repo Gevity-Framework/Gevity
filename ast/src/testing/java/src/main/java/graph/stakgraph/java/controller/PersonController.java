@@ -8,7 +8,6 @@ import java.util.Optional;
 
 protected static String appName = "gevity";
 
-
 @RestController
 public class PersonController {
     private final PersonRepository repository;
