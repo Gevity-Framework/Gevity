@@ -123,9 +123,15 @@ export class GitHubIssueAdapter extends BaseAdapter {
       if (this.processedIssues.has(issue.number)) {
         continue;
       }
+      if (!issue.body) {
+        continue;
+      }
 
-      // Check if @stakwork is mentioned
-      if (issue.body && issue.body.includes("@stakwork")) {
+      // Check if @stakwork or @gevity is mentioned
+      if (
+        issue.body.includes("@stakwork") ||
+        issue.body.includes("@gevity")
+      ) {
         const chatId = `github-issue-${issue.number}`;
 
         // Extract codespace URL from the issue body
