@@ -23,7 +23,7 @@ FROM sphinxlightning/gevity-lsp:latest
 # Set working directory
 WORKDIR /app
 
-COPY --from=builder /app/standalone/target/release/standalone /app/standalone
-COPY --from=builder /app/standalone/static /app/static
+COPY --from=builder /app/standalone/target/release/standalone /app/gevity
+COPY --from=builder /app/standalone/static /app/standalone/static
 
-CMD ["./standalone"]
+CMD ["./gevity"]
